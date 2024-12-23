@@ -1,0 +1,10 @@
+[16,21,11,8,12,22] -> Merge Sort
+
+1) Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+  
+  step 1 ->  n / 2; [16,21,11]  |  [8, 12, 22]
+  step 2 ->  n / 2; [16,21]     |  [8, 12]
+  step 3 ->  n / 2 ;[16]        |  [8]
+
+2) Big-O gösterimini yazınız
+  o(logn)
