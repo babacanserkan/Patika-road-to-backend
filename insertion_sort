@@ -1,1 +1,19 @@
+[22,27,16,2,18,6] -> Insertion Sort
 
+1) Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
+  minValue = 2;  swap: 22 ve 2 -->  [2 | 27, 16, 22, 18, 6]
+  minValue = 6;  swap: 27 ve 6 ->>  [2, 6 | 16, 22, 18, 27]
+  minValue = 16; swap: yer değişimi olmayacak. --> [2, 6, 16 | 22, 18, 27]
+  minValue = 18; swap: 22 ve 18 --> [2, 6, 16, 18 | 22, 27]
+  minValue = 22; swap: yer değişimi olmayacak. --> [2, 6, 16, 18, 22]
+
+2) Big-O gösterimini yazınız.
+
+  n(n-1) / 2
+  elemanlar rastgele dağıldığı için ilk indexten başlayıp teker teker dolaşacağı için Big-O: O(n^2)
+
+
+3) Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız.
+
+  18 sayısı dizinin ortasında olduğu için avarage case kapsamına girmektedir --> [2, 6, 16, 18, 22, 27] 
