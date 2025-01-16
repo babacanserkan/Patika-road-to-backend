@@ -1,0 +1,29 @@
+-- 1) test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+
+CREATE Table employee (
+	id SERIAL KEY INTEGER,
+	name VARCHAR(50),
+	birthday DATE,
+	email VARCHAR(100)
+)
+
+-- 2) Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+
+insert into employee (name, birthday, email) values ('Peadar', '1998-03-28', 'pgonsalvez0@sfgate.com');
+insert into employee (name, birthday, email) values ('Kylie', '1973-12-31', 'klevett1@columbia.edu');
+insert into employee (name, birthday, email) values ('Ermengarde', '1954-02-08', 'eeberle2@ocn.ne.jp');
+insert into employee (name, birthday, email) values ('Lonnard', '2018-07-16', 'lmccarty3@wikia.com');
+...
+
+-- 3) Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+
+UPDATE employee 
+SET 
+	name = 'TEST',
+WHERE id = 12
+
+-- 4) Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+
+DELETE FROM employee 
+	WHERE id IN(20, 40)
+	
