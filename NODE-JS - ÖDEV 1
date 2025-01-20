@@ -1,0 +1,19 @@
+Ödev 1
+Node.JS Komut Satırı Kullanımı
+Hepimizin Matematik derslerinden bildiği üzere Dairenin Alanı = π x r2 şeklinde hesaplanır. 
+Node.JS Javascript çalışma ortamında yarıçap değerini konsoldan parametre olarak girerek alanı bulmaya çalışacağız. 
+Konsol çıktısı: Yarıçapı (Yarıçap) olan dairenin alanı: (Alan) şeklinde olmalıdır.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+const ARGUMENTS = process.argv.slice(2)[0]
+
+function calcArea(radius) {
+    const PI = 3.14
+    const R = radius ** 2
+    
+    return PI * R
+}
+
+const result = calcArea(ARGUMENTS)
+console.log(`Yarıçapı (${ARGUMENTS}) olan dairenin alanı: ${result}`)
